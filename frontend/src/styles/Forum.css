@@ -1,0 +1,83 @@
+section {
+    padding: 10px;
+}
+
+.h1Header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 10px 5px;
+}
+
+.h1Header .link {
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+}
+
+.h1Header i.fa-right-from-bracket {
+    transform: rotate(180deg);
+    color: rgba(253,45,1)
+}
+
+.h1Header button {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    border: 1px solid rgba(9,31,67);
+    color: rgba(9,31,67);
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+h1.title {
+    background: linear-gradient(0deg, rgba(253,45,1) 0%,rgba(9,31,67)  100%);
+    background-clip: text;
+    text-align: center;
+    color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    }
+
+@media (max-width: 450px) {
+    h1.title {
+        font-size: 2rem;
+    }
+}
+
+.unauthorized {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.unauthorized h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.unauthorized button {
+    background: #091F43;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 15px;;
+    transition: all ease 0.4s; 
+}
