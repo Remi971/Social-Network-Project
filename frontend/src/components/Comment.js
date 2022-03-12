@@ -67,7 +67,7 @@ function Comment({userId, message, commentId, date, deleteFunc, isAdmin, classNa
                     {Boolean((parseInt(localStorage.getItem("userId")) === userId || isAdmin) & modifMode === false) && (
                     <div className='containComment_header-btn'>
                         <button className='suppBtn' onClick={handleDelete}>Supprimer <i className="fas fa-trash-alt"></i></button>
-                        <button className='modifBtn' onClick={activateModify}>Modifier <i className="fas fa-pencil"></i></button>
+                        {parseInt(localStorage.getItem("userId")) === userId && (<button className='modifBtn' onClick={activateModify}>Modifier <i className="fas fa-pencil"></i></button>)}
                     </div>
                     )}
                 </div>

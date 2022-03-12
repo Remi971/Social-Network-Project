@@ -172,7 +172,7 @@ function Article({ date, message, srcImage, atlText, articleId, userId,isAdmin,u
                 {parseInt(localStorage.getItem("userId")) === userId | isAdmin ? (
                     <div className='BtnContainer'>
                         <button className='suppBtn' onClick={deleteArticle}>Supprimer <i className="fa-solid fa-trash"></i></button>
-                        {modifyActive === false && (
+                        {Boolean(modifyActive === false & parseInt(localStorage.getItem("userId")) === userId) && (
                         <button className='modifBtn' onClick={modifyArticle}>Modifier <i className="fa-solid fa-pen-to-square"></i></button>
                         )}
                     </div>
