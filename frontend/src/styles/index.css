@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+html {
+    background: linear-gradient(0deg, rgba(253,45,1,0.5) 0%, rgba(9,31,67,0.5)  100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
