@@ -70,14 +70,19 @@ function ArticleCreation({className}) {
         <div className={className}>
             <form  onSubmit={onSubmit}>
                 <div className='userPost'>
-                    <Link to='/infoUser' ><img src={profileImage} alt={altText} /></Link>
+                    <img src={profileImage} alt={altText} />
                     <textarea type='text' name='message' id='text' value={message} placeholder='Créer un post' onChange={handleChange}></textarea>
                 </div>
                 <div className='header__btn'>
-                    <button className='btn btn-image' onClick={handleClick}><i className="fa-solid fa-image"></i> Joindre une image</button>
-                    <input type='file' name='image' id='file' accept='image/*' onChange={handleFileSelect} />
-                    <input id='submit' type='submit' />
-                    <button className='btn btn-envoi' onClick={handleSubmit}><i className="fa-solid fa-paper-plane"></i> Envoyer</button>
+                    <div className='header__btn--profil'>
+                        <Link to='/infoUser' className='btn-image btn-profile'>Info Profil</Link>
+                    </div>
+                    <div>
+                        <button className='btn btn-image' onClick={handleClick}><i className="fa-solid fa-image"></i> Joindre une image</button>
+                        <input type='file' name='image' id='file' accept='image/*' onChange={handleFileSelect} />
+                        <input id='submit' type='submit' />
+                        <button className='btn btn-envoi' onClick={handleSubmit}><i className="fa-solid fa-paper-plane"></i> Envoyer</button>
+                    </div>
                 </div>
             </form>
             {image && <img id='imageArticle' src={URL.createObjectURL(image)} alt={image.name} />}

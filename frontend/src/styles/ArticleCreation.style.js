@@ -43,15 +43,28 @@ export const StyledArticleCreation = styled(ArticleCreation)`
         }
         .header__btn {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
+                align-items: center;
 
                 .btn {
                     padding: 10px;
                     border-radius: 10px;
                     border: none;
                     cursor: pointer;
+                    text-decoration: none;
                 }
 
+                .header__btn--profil {
+                    width: 70px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+                .btn-profile {
+                    border-radius: 10px;
+                    background: white;
+                }
                 .btn-envoi {
                     background-color: ${colors.darkBlue};
                     color: white;
